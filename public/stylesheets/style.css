@@ -1,8 +1,44 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root{
+    --primary: #2E2F5B;
+    --secondary: #E8D3B9;
+
+    --primary-font: 'Source Code Pro', monospace;
+    --secondary-font: monospace;
 }
 
-a {
-  color: #00B7FF;
+body{
+    background-color: var(--primary);
 }
+
+.navbar{
+    color: var(--secondary);
+    font-family: var(--primary-font);
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.initials{
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.nav-links ul{
+    display:flex;
+    list-style-type: none;
+}
+
+.nav-links a{
+    color: var(--secondary);
+
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.nav-links a:hover{
+    border-bottom: 1px solid var(--secondary);
+    color: white;
+}
+
